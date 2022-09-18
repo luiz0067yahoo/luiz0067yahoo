@@ -16,7 +16,7 @@
 
 - 💬 Ask me about **PHP, VUE Bootstrap**
 
-- 📫 How to reach me **luiz0067@gmail.com, +5545998413111**
+- 📫 How to reach me **luiz0067@gmail.com, https://wa.me/5545998413111**
 
 - 📄 Know about my experiences [https://www.linkedin.com/in/luiz-fernando-brogliatto-ferreira-2375047b/](https://www.linkedin.com/in/luiz-fernando-brogliatto-ferreira-2375047b/)
 
