@@ -10,7 +10,7 @@
 
 - 🤝 I’m looking for help with Flutter [aula_03_pos_23_04_2022](https://github.com/luiz0067yahoo/aula_03_pos_23_04_2022)
 
-- 👨‍💻 All of my projects are available at [https://tooeste.com.br/](https://tooeste.com.br/)
+- 👨‍💻 All of my projects are available at [https://tooeste.com.br/](https://tooeste.com.br/) [ec2-54-166-21-114.compute-1.amazonaws.com][aws ec2]
 
 - 📝 I regularly write articles on [https://inprolink.blogspot.com/p/home.html](https://inprolink.blogspot.com/p/home.html)
 
