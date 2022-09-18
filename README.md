@@ -1,10 +1,10 @@
 <h1 align="center">Hi 👋, I'm Luiz Fernando Brogliatto Ferreira</h1>
 <h3 align="center">A passionate fullstack developer from Brazil</h3>
 
-<p align="left"> <img src="https://user-images.githubusercontent.com/102493028/190930662-93ab845c-5bed-4e03-995c-740ecab24e5d.png" style="width:32px;height:32px"alt="luizyahoo" /> </p>
+<p align="left"><a href="https://github.com/luiz0067yahoo/luiz0067yahoo" target="blank"> <img src="https://user-images.githubusercontent.com/102493028/190930662-93ab845c-5bed-4e03-995c-740ecab24e5d.png" style="width:32px;height:32px"alt="luizyahoo" /> luiz0067yahoo</a> </p>
 
 
-<p align="left"> <a href="https://twitter.com/https://twitter.com/brogliattoluiz" target="blank"><img src="https://img.shields.io/twitter/follow/https://twitter.com/brogliattoluiz?logo=twitter&style=for-the-badge" alt="https://twitter.com/brogliattoluiz" /></a> </p>
+<p align="left"> <a href="https://twitter.com/https://twitter.com/brogliattoluiz" target="blank"><img src="https://icon-icons.com/pt/icone/twitter-preto-logo/147062"  style="width:32px;height:32px" alt="https://twitter.com/brogliattoluiz" /></a> </p>
 
 - 🔭 I’m currently working on PHP Laravel Vue Bootstrap [boracomer](https://github.com/luiz0067yahoo/boracomer)
 
