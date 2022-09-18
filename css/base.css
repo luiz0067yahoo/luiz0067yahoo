@@ -1,0 +1,58 @@
+img.transparente{
+	behavior:url(./css/iepngfix.htc);
+}
+
+body{
+	margin-top:0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	padding-top:0px;
+	padding-left:0px;
+	padding-bottom:0px;
+	padding-right:0px;
+	position:abolute;	
+	display:block;
+	height:auto;
+	background-color:#559CCF;
+	font-family:Arial;
+}
+#All{
+	width:100%;
+	min-height:100%;
+	height:auto;	
+	position:abolute;
+	display:block;
+}
+div.line {
+	width:100%;
+	height:auto;
+	margin-left:0px;
+	margin-right:0px;
+	clear:both;
+	display:block;
+}
+
+div.left{
+	float:left;
+	height:auto;	
+	display:block;
+}
+
+div.center{
+	float:center;
+	height:auto;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	left:auto;
+	right:auto;
+	display:block;
+}
+div.right{
+	float:right;
+	height:auto;	
+	display:block;
+}
+
+

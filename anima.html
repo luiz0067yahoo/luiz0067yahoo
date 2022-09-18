@@ -1,0 +1,420 @@
+<html>
+	<head>
+		<title>3D animation</title>
+		<script type="text/javascript">
+			var avancar_voltar=true;
+			var pausar=false;
+			var intervalo=250;
+			var inicidado=false;
+			function pause(){
+				if(inicidado){
+					pausar=true;
+					$("botoes_play").parentNode.style.display="block";
+					$("botoes_pause").parentNode.style.display="none";
+				}
+			}
+			function play(){
+				if(inicidado){
+					pausar=false;
+					$("botoes_play").parentNode.style.display="none";
+					$("botoes_pause").parentNode.style.display="block";
+				}
+			}
+			function progredir(){
+				if(inicidado){
+					avancar_voltar=true;
+					pausar=false;
+					intervalo=250;
+				}
+			}
+			function progredir_rapido(){
+				if(inicidado){
+					avancar_voltar=true;
+					pausar=false;
+					intervalo=100;
+				}
+			}
+			function retroceder(){
+				if(inicidado){
+					avancar_voltar=false;
+					pausar=false;
+					intervalo=250;
+				}
+			}
+			function retroceder_rapido(){
+				if(inicidado){
+					avancar_voltar=false;
+					pausar=false;
+					intervalo=100;
+				}
+			}
+			function avancar($rotativo){
+				var $imagens=BuscarFilhoPorAtributoValor($rotativo,"funcao","imagem_rotativa");
+				var posicao=0;
+				try{
+					for(var y=0;y<$imagens.length;y++){
+						if($imagens[y].style.display=="block"){
+							if((y+1)<$imagens.length)
+								posicao=y+1;
+							$imagens[y].style.display="none";
+						}						
+					}
+					$imagens[posicao].style.display="block"
+				}
+				catch(erro__){}
+			}
+			function moverPara($rotativo,posicao){
+				var $imagens=BuscarFilhoPorAtributoValor($rotativo,"funcao","imagem_rotativa");
+				try{
+					for(var y=0;y<$imagens.length;y++){
+						if($imagens[y].style.display=="block"){
+							$imagens[y].style.display="none";
+						}						
+					}
+					$imagens[posicao-1].style.display="block"
+				}
+				catch(erro__){}
+			}
+			function voltar($rotativo){
+				var $imagens=BuscarFilhoPorAtributoValor($rotativo,"funcao","imagem_rotativa");
+				var posicao=$imagens.length-1;
+				try{
+					for(var y=$imagens.length-1;y>=0;y--){
+						if($imagens[y].style.display=="block"){
+							if((y-1)>=0)
+								posicao=y-1;
+							$imagens[y].style.display="none";
+						}	
+					}
+					$imagens[posicao].style.display="block"
+				}
+				catch(erro__){}
+			}
+			function rodar(){
+				$("carregando").style.display="none";
+				inicidado=true;
+				if(!pausar){
+					var $body=document.getElementsByTagName("body")[0];
+					var $rotativos=BuscarFilhoPorAtributoValor($body,"funcao","banner_rotativa");
+					for(var x=0;x<$rotativos.length;x++){
+						if(avancar_voltar)
+							avancar($rotativos[x]);
+						else
+							voltar($rotativos[x]);
+					}
+					var $imagens=BuscarFilhoPorAtributoValor($body,"class","banner1");
+				}
+				setTimeout("rodar("+intervalo+")", intervalo);
+			}
+			function BuscarFilhoPorAtributoValor($element,atributo,valor){
+				var $result=new Array();
+				if($element.hasChildNodes()){
+					for(var i=0;i<$element.childNodes.length;i++){
+						try{
+							var $x=$element.childNodes[i];
+							if ($x.nodeType==1){
+								if ($x.hasAttribute(atributo)){	
+									if ($x.getAttribute(atributo)!=null){
+										if ($x.getAttribute(atributo)==valor){
+											$result.push($x);
+										}
+									}
+								}			 
+							}
+							var acc=BuscarFilhoPorAtributoValor($x,atributo,valor);
+							if (acc!=null){
+								for(var j=0;j<acc.length;j++){
+									$result.push(acc[j]);
+								}					
+							}									
+						}
+						catch(e){}
+					}
+				}
+				if ($result.length==0)
+					$result=null
+				return $result;
+			}
+			function BuscarPaiPorAtributoValor(componente,atributo,valor){
+				var resultado=null;
+				var erro=null;
+				//for(var i=0;i<nivel;i++){
+				while(true){
+					try{
+						if (componente.hasAttribute(atributo)!=null){			
+							if (componente.getAttribute(atributo)!=null){
+								if (componente.getAttribute(atributo)===valor){
+									resultado = componente;			
+									break;
+								}
+							}		
+						}
+						if ((componente!=null)||(componente.equals(document)))
+							componente=componente.parentNode;
+						else
+							break;
+					}
+					catch(erro){break;}
+				}
+				return resultado;
+			}
+			function $(id){
+				return document.getElementById(id);
+			}
+			
+		</script>
+		<style type="text/css">
+			body{
+				margin-top:0px;
+				margin-left: 0px;
+				margin-bottom: 0px;
+				margin-right: 0px;
+				padding-top:0px;
+				padding-left:0px;
+				padding-bottom:0px;
+				padding-right:0px;
+				position:abolute;
+				background-color:#FFF;
+			}
+			#tudo{
+				width:100%;
+				height:100%;	
+				position:abolute;
+				background-color:#FFF;
+			}
+			div.linha {
+				width:100%;
+				height:auto;
+				margin-left:0px;
+				margin-right:0px;
+				clear:both;
+			}
+
+			div.esquerda{
+				float:left;
+				height:auto;	
+				display:block;
+			}
+
+			div.centro{
+				float:center;
+				text-align:center;
+				margin-left:auto;
+				margin-right:auto;
+				left:auto;
+				right:auto;
+			}
+			div.direita{
+				float:right;
+				height:auto;	
+				display:block;
+			}
+			
+		
+		
+		
+		
+			div.video{
+				width:400px; 
+				height:300px;
+				display:block;
+				overflow:hidden;
+				clear:both;
+				margin-left:auto;
+				margin-right:auto;
+			}			
+			div.carregando{
+				width:400px; 
+				height:300px;
+				display:block;
+				overflow:hidden;
+				clear:both;
+				margin-left:auto;
+				margin-right:auto;
+				position:absolute;
+				background-color:black;
+				opacity:0.65;
+				-moz-opacity: 0.65;
+				filter: alpha(opacity=65);
+			}
+			img.carregando{
+				margin-left:auto;
+				margin-right:auto;
+				width:300px; 
+				height:300px;
+				display:block;
+			}
+			img.quadro_oculto{
+				width:400px; 
+				height:300px;
+				display:none;
+			}
+			
+			div.linha_botoes{
+				width:100%;
+				height:23px;
+				display:block;
+				clear:both;
+			}
+			div.centro_botoes{
+				width:160px; 
+				height:23px;
+				display:block;
+				overflow:hidden;
+				clear:both;
+				margin-left:auto;
+				margin-right:auto;
+			}
+			div.botoes{
+				width:23px; 
+				height:23px;
+				display:block;
+				overflow:hidden;
+				float:left;
+			}
+		</style>
+	</head>
+	<body onload="carrega()">
+		<div funcao="banner_rotativa" class="video">
+			<div funcao="banner_rotativa" class="carregando" id="carregando">
+				<img width="300px" height="300px" funcao="imagem_rotativa" src="./imagens/carregando.gif" class="carregando">
+			</div>
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:block;" src="./imagens/anima/anima0000.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0001.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0002.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0003.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0004.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0005.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0006.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0007.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0008.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0009.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0010.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0011.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0012.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0013.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0014.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0015.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0016.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0017.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0018.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0019.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0020.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0021.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0022.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0023.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0024.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0025.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0026.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0027.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0028.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0029.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0030.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0031.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0032.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0033.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0034.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0035.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0036.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0037.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0038.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0039.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0040.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0041.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0042.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0043.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0044.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0045.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0046.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0047.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0048.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0049.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0050.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0051.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0052.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0053.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0054.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0055.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0056.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0057.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0058.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0059.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0060.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0061.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0062.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0063.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0064.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0065.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0066.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0067.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0068.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0069.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0070.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0071.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0072.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0073.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0074.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0075.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0076.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0077.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0078.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0079.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0080.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0081.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0082.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0083.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0084.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0085.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0086.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0087.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0088.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0089.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0090.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0091.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0092.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0093.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0094.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0095.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0096.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0097.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0098.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0099.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0100.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0101.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0102.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0103.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0104.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0105.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0106.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0107.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0108.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0109.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0110.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0111.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0112.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0113.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0114.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0115.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0116.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0117.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0118.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0119.png">
+			<img width="400px" height="300px" funcao="imagem_rotativa" style="display:none;" src="./imagens/anima/anima0120.png">
+			<script type="text/javascript">
+				function carrega(){
+					rodar(); 
+				}
+			</script>
+		</div>
+		<div class="linha_botoes">
+			<div class="centro_botoes">
+				<div class="botoes"><img width="23px" height="23px" src="./imagens/First.png" onclick="retroceder_rapido()"></div>
+				<div class="botoes"><img width="23px" height="23px" src="./imagens/Rewind.png" onclick="retroceder()"></div>
+				<div class="botoes" style="display:none;"><img width="23px" height="23px" src="./imagens/play.png"  id="botoes_play" onclick="play()"></div>
+				<div class="botoes"><img width="23px" height="23px" src="./imagens/pause.png" id="botoes_pause" onclick="pause()"></div>
+				<div class="botoes"><img width="23px" height="23px" src="./imagens/Forward.png" onclick="progredir()"></div>
+				<div class="botoes"><img width="23px" height="23px" src="./imagens/Last.png" onclick="progredir_rapido()"></div>
+			</div>
+		</div>
+	</body>
+</html>
