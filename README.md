@@ -1,51 +1,71 @@
-<h1 align="center">Hi 👋, I'm Luiz Fernando Brogliatto Ferreira</h1>
-<h3 align="center">A passionate fullstack developer from Brazil</h3>
-
-
-- 🔭 I’m currently working on PHP Laravel Vue Bootstrap [boracomer](https://github.com/luiz0067yahoo/boracomer)
-
-- 🌱 I’m currently learning WebAssembly **CodeBlocks**
-
-- 👯 I’m looking to collaborate on Ruby on Rails [demo_cms_rails](https://github.com/luiz0067yahoo/demo_cms_rails)
-
-- 🤝 I’m looking for help with Flutter [aula_03_pos_23_04_2022](https://github.com/luiz0067yahoo/aula_03_pos_23_04_2022) and android studio native [agenda_telefonica](https://github.com/luiz0067yahoo/agenda_telefonica)
-
-- 👨‍💻 All of my projects are available at [https://tooeste.com.br/](https://tooeste.com.br/) [https://ec2-54-166-21-114.compute-1.amazonaws.com/](https://ec2-54-166-21-114.compute-1.amazonaws.com/)
-
-- 📝 I regularly write articles on [https://inprolink.blogspot.com/p/home.html](https://inprolink.blogspot.com/p/home.html)
-
-- 💬 Ask me about **PHP, VUE Bootstrap**
-
-- 📫 How to reach me **luiz0067@gmail.com, https://wa.me/5545998413111**
-
-- 📄 Know about my experiences [https://www.linkedin.com/in/luiz-fernando-brogliatto-ferreira-2375047b/](https://www.linkedin.com/in/luiz-fernando-brogliatto-ferreira-2375047b/)
-
-- ⚡ Fun fact **My first project done by myself I programmed on napkin**
-
--
-##
 <div align="center">
-  <a href="https://github.com/luiz0067yahoo">
-  <img height="165em" src="https://github-readme-stats.vercel.app/api?username=luiz0067yahoo&show_icons=true&theme=merko&include_all_commits=true&count_private=true"/>
-  <img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=luiz0067yahoo&layout=compact&langs_count=7&theme=merko"/>
+  <h1>Olá! Eu sou Luiz Fernando 👋</h1>
+  <p><strong>Desenvolvedor Full Stack | PHP (Laravel) • Vue.js • Soluções Web & IoT</strong></p>
+
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luiz-fernando-brogliatto-ferreira-2375047b/)
+  [![Portfólio](https://img.shields.io/badge/Website-tooeste.com.br-0A66C2?style=for-the-badge&logo=google-chrome&logoColor=white)](https://tooeste.com.br/)
+  [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5545998413111)
+  [![Email](https://img.shields.io/badge/Email-luiz0067%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:luiz0067@gmail.com)
 </div>
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/brogliattoluiz" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="https://twitter.com/brogliattoluiz" height="30" width="40" /></a>
-<a href="https://www.linkedin.com/in/luiz-fernando-brogliatto-ferreira-2375047b/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/luiz-fernando-brogliatto-ferreira-2375047b/" height="30" width="40" /></a>
-<a href="https://stackoverflow.com/users/19752537/luiz-ferreira" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="https://stackoverflow.com/users/19752537/luiz-ferreira" height="30" width="40" /></a>
-<a href="https://www.facebook.com/luizfernandobrogliattoferreira" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="https://www.facebook.com/luizfernandobrogliattoferreira" height="30" width="40" /></a>
-<a href="https://www.instagram.com/inprolink/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="https://www.instagram.com/inprolink/" height="30" width="40" /></a>
-<a href="https://www.youtube.com/channel/uccuhuwf0wov_fnyjcafh-iw" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="https://www.youtube.com/channel/uccuhuwf0wov_fnyjcafh-iw" height="30" width="40" /></a>
-</p>
+---
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a> <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40"/> </a> <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg" alt="angularjs" width="40" height="40"/> </a> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.chartjs.org" target="_blank" rel="noreferrer"> <img src="https://www.chartjs.org/media/logo-title.svg" alt="chartjs" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://dart.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://kotlinlang.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40"/> </a> <a href="https://laravel.com/" target="_blank" rel="noreferrer">
-  <img
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original-wordmark.svg"
-    alt="Laravel"
-    width="40"
-    height="40"
-  />
-</a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://mariadb.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.nginx.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://rubyonrails.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg" alt="rails" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://www.ruby-lang.org/en/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg" alt="ruby" width="40" height="40"/> </a> <a href="https://spring.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="40" height="40"/> </a> <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/> </a> <a href="https://www.wxwidgets.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/WxWidgets.svg" alt="wx_widgets" width="40" height="40"/> </a> </p>
+### 👨‍💻 Sobre Mim
+
+Sou desenvolvedor com sólida experiência na construção de aplicações web completas, APIs resilientes e integração com dispositivos/IoT. Foco em arquitetura limpa, manutenibilidade e entrega de valor de ponta a ponta — do banco de dados ao front-end reativo.
+
+- 🔭 **Foco atual:** Aplicações web modernas com ecossistema Laravel e Vue.js.
+- 💡 **Experiência:** Arquitetura MVC, REST APIs, modelagem de dados SQL/NoSQL e automação.
+- ⚡ **Curiosidade:** Meu primeiro algoritmo foi desenhado à mão em um guardanapo antes de virar código.
+
+---
+
+### 🚀 Projetos em Destaque
+
+| Projeto | Descrição | Stack | Acesso |
+| :--- | :--- | :--- | :---: |
+| **BoraComer** | Plataforma para pedidos e gestão gastronômica com interface reativa e painel administrativo. | `PHP` `Laravel` `Vue.js` `Bootstrap` | [Repositório](https://github.com/luiz0067yahoo/boracomer) |
+| **Demo CMS Rails** | Sistema de gerenciamento de conteúdo com controle de permissões e rotas dinâmicas. | `Ruby` `Ruby on Rails` `PostgreSQL` | [Repositório](https://github.com/luiz0067yahoo/demo_cms_rails) |
+| **Painel / IoT System** | Integração de hardware com interface web para monitoramento e controle em tempo real. | `C++` `ESP32` `JavaScript` `WebSockets` | [Repositório](https://github.com/luiz0067yahoo) |
+
+---
+
+### 🛠️ Tecnologias & Ferramentas
+
+#### **Backend & APIs**
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Ruby on Rails](https://img.shields.io/badge/Rails-CC0000?style=flat-square&logo=rubyonrails&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+
+#### **Frontend & Mobile**
+![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
+
+#### **Bancos de Dados & DevOps**
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+
+---
+
+### 📊 Estatísticas do GitHub
+
+<div align="center">
+  <img height="150em" src="https://github-readme-stats.vercel.app/api?username=luiz0067yahoo&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" />
+  <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=luiz0067yahoo&layout=compact&theme=tokyonight" />
+</div>
+
+---
+
+### 📬 Vamos conversar?
+
+- 🌐 Portfólio oficial: [tooeste.com.br](https://tooeste.com.br/)
+- 💼 LinkedIn: [Luiz Fernando Brogliatto Ferreira](https://www.linkedin.com/in/luiz-fernando-brogliatto-ferreira-2375047b/)
+- 💬 WhatsApp direto: [+55 (45) 99841-3111](https://wa.me/5545998413111)
